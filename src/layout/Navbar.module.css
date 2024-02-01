@@ -46,7 +46,7 @@
   }
 
 
-  /* Media query for mobile devices */
+  /* This is the Media query for mobile devices */
 @media screen and (max-width: 768px) {
   .burgerIcon {
     display: block;
