@@ -1,0 +1,90 @@
+
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(13, 34, 52); /* Add your preferred background color */
+    padding: 15px; /* Add padding for better spacing */
+    color: grey;
+    height: 50px;
+  }
+
+  .midLinks a, .rightLogin a {
+    color: grey; /* Default color for other links */
+    text-decoration: none;
+  }
+  
+  .leftLogo {
+    display: flex;
+    width: 30%;
+  }
+  
+  .midLinks {
+    display: flex;
+    gap: 20px; /* Add spacing between nav links */
+    width: 30%; /* Adjust the width as needed, this example sets it to 50% */
+    background-color: rgb(13, 34, 52);
+    justify-content: center;
+}
+
+.createButton{
+    border: .5px grey solid;
+    padding: 10px;
+    margin-top: 5px;
+
+}
+.login{
+ margin-top: 15px;
+}
+
+.rightLogin {
+    display: flex;
+    gap: 20px;
+    width: 30%; /* Adjust the width as needed */
+    justify-content: flex-end; /* Align items to the right */
+  }
+
+
+  /* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .burgerIcon {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    order: 2; /* Move the burger icon to the right */
+  }
+
+  .midLinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgb(13, 34, 52);
+    z-index: 1; /* Ensure the links appear above other elements */
+    display: none;
+  }
+
+  .midLinks a {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .showLinks {
+    display: flex;
+  }
+
+  .rightLogin {
+    order: 1; /* Move the login and create account to the left */
+  }
+}
+
+/* Hide burger icon for larger screens */
+@media screen and (min-width: 769px) {
+  .burgerIcon {
+    display: none;
+  }
+}
