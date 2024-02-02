@@ -16,12 +16,10 @@
   }
   
   .leftLogo {
-    display: flex;
     width: 30%;
   }
   
   .midLinks {
-    display: flex;
     gap: 20px; /* Add spacing between nav links */
     width: 30%; /* Adjust the width as needed, this example sets it to 50% */
     background-color: rgb(13, 34, 52);
@@ -29,8 +27,8 @@
 }
 
 .createButton{
-    border: .5px grey solid;
-    padding: 10px;
+    border: var(--button-border-grey);
+    padding: var(--padding-two);
     margin-top: 5px;
 
 }
@@ -39,7 +37,6 @@
 }
 
 .rightLogin {
-    display: flex;
     gap: 20px;
     width: 30%; /* Adjust the width as needed */
     justify-content: flex-end; /* Align items to the right */

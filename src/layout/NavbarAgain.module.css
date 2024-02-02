@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  rgb(13, 34, 52);
+}
+
+.left-logo{
+    padding: 1rem;
+}
+
+.middle-links, .right-links{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: grey;
+
+}
+
+.right-links{
+    padding-right: 1.5rem; 
+}
+
+.createButton{
+    border: var(--button-border-grey);
+    padding: var(--padding-two);
+}

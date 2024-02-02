@@ -1,6 +1,7 @@
 import {Routes, Route} from "react-router-dom"
 //Layout
 import Navbar from "./layout/Navbar"
+import NavbarAgain from "./layout/NavbarAgain"
 //Pages
 import Home from "./pages/Home"
 import CreateAccount from "./pages/CreateAccount"
@@ -14,7 +15,10 @@ import Solutions from "./pages/Solutions"
 const App = () => {
   return (
     <>
+    <div className="time"></div>
+    <section>
     <Navbar/>
+    <NavbarAgain/>
     <Routes>
       <Route path={"/"} element={<Home/>}></Route>
       <Route path={"/create-account"} element={<CreateAccount/>}></Route>
@@ -24,7 +28,10 @@ const App = () => {
       <Route path={"/pricing"} element={<Pricing/>}></Route>
       <Route path={"/solutions"} element={<Solutions/>}></Route>
     </Routes>
+    </section>
     </>
+    
+    
   )
 }
 
