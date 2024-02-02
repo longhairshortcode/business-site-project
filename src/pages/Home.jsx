@@ -7,9 +7,13 @@ function Home() {
       <div>
       <h1 className={style.title}>Connected Contracting</h1>
       <p className={style.p}>Build, manage, and integrate your contracts with your software tools for smarter management.</p>
-      <NavLink to="/create-account" className={style.signUp}>Sign Up</NavLink>
-      <NavLink to="/pricing" className={style.plans}>Paid Plans</NavLink>
-    </div>
+      
+        <div className={style.buttonsContainer}>
+          <NavLink to="/create-account" className={style.signUp}>Sign Up</NavLink>
+          <NavLink to="/pricing" className={style.plans}>Paid Plans</NavLink>
+        </div>
+
+      </div>
     </div>
   )
 }

@@ -29,6 +29,7 @@
 .createButton{
     border: var(--button-border-grey);
     padding: var(--padding-two);
+    width: var(--button-width);
     margin-top: 5px;
 
 }

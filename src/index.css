@@ -2,7 +2,9 @@
    --button-border-grey: .1rem solid grey; 
    --padding-one: .5rem;
    --padding-two: 1rem;
---red: rgb(12, 12, 45);
+   --border-radius: .3rem;
+   --navy-blue: rgb(13, 34, 52);
+   --button-width: 6rem;
 }
 
 

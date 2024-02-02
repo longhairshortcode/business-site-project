@@ -16,15 +16,19 @@
     margin-top: 150px;
 }
 
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .signUp, .plans {
     text-decoration: none;
     color: white;
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 10px 20px; /* Adjust padding as needed */
-    width: fit-content; /* Adjust width as needed */
-    display: inline-block; /* Ensure inline-block display */
+    border: var(--button-border-grey);
+    padding: var(--padding-two);
+    width: var(--button-width); /* Adjust width as needed */
+    border-radius: var(--border-radius);
     margin: 10px; /* Adjust margin as needed */
 }
 

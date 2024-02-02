@@ -1,6 +1,6 @@
 import {Routes, Route} from "react-router-dom"
 //Layout
-import Navbar from "./layout/Navbar"
+// import Navbar from "./layout/Navbar"
 import NavbarAgain from "./layout/NavbarAgain"
 //Pages
 import Home from "./pages/Home"
@@ -17,7 +17,7 @@ const App = () => {
     <>
     <div className="time"></div>
     <section>
-    <Navbar/>
+    {/* <Navbar/> */}
     <NavbarAgain/>
     <Routes>
       <Route path={"/"} element={<Home/>}></Route>

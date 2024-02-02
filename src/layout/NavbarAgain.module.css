@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:  rgb(13, 34, 52);
+    background-color: rgb(13, 34, 52) ;
 }
 
 .left-logo{
@@ -12,9 +12,13 @@
 .middle-links, .right-links{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+   gap: 1.5rem; 
     color: grey;
 
+}
+
+.middle-links{
+    padding-right: 17rem;
 }
 
 .right-links{
@@ -24,4 +28,52 @@
 .createButton{
     border: var(--button-border-grey);
     padding: var(--padding-two);
+    border-radius: var(--border-radius);
+}
+
+.burgerIcon{
+    color: grey;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .burgerIcon, .closeIcon{
+        display: block;
+        cursor: pointer;
+        order: 2;
+        padding-right: 2rem;
+    }
+
+    .closeIcon{
+        color: white;
+    }
+
+
+    .middle-links, .right-links{
+        display: none;
+    }
+
+
+    .showLinks{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        padding-right: 90px;
+    }
+
+    .left-logo img{
+      max-width: 100px;
+      height: auto;  
+    }
+
+   .hide{
+    display: none;
+   }
+
+}
+
+@media screen and (min-width: 769px) {
+    .burgerIcon{
+    display: none;
+}
 }
